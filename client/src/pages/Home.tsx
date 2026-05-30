@@ -28,7 +28,7 @@ const courses: CourseCard[] = [
     id: "junior",
     title: "Junior Programme",
     classes: "Classes 7-10",
-    subjects: ["Mathematics", "Physics"],
+    subjects: ["Mathematics", "Science"],
     icon: "📚",
     color: "from-blue-500 to-blue-600",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663626720270/KxHGzeFrf2K2QF4TaDuj8b/student-math-bHEz6RBUjyXRBgdJSLGccx.webp",
@@ -116,7 +116,7 @@ const ExploreCourseModal: React.FC<{ open: boolean; onOpenChange: (open: boolean
 
   useEffect(() => {
     if (selectedClass === "7-10") {
-      setSubjects(["Mathematics", "Physics"]);
+      setSubjects(["Mathematics", "Science"]);
     } else if (selectedClass === "11-12") {
       setSubjects(["Physics", "Chemistry", "Biology", "Mathematics"]);
     } else {
