@@ -490,53 +490,72 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 md:py-32 bg-gradient-to-br from-blue-900 to-blue-800 text-white">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">About Prepgenesis</h2>
-              <p className="text-lg text-blue-100 mb-6 leading-relaxed">
-                Prepgenesis is a premier coaching institute dedicated to nurturing academic excellence. We focus on providing comprehensive education with personalized attention to every student.
-              </p>
-              <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                Our expert faculty, comprehensive curriculum, and personalized approach ensure that every student reaches their full potential and achieves their academic goals.
-              </p>
-
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <Award className="text-amber-400 flex-shrink-0 mt-1" size={24} />
-                  <div>
-                    <h4 className="font-bold text-lg mb-1">Expert Faculty</h4>
-                    <p className="text-blue-100">Highly qualified teachers with years of experience</p>
-                  </div>
+          {/* Description */}
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">About Prepgenesis</h2>
+            <p className="text-lg text-blue-100 mb-6 leading-relaxed">
+              Prepgenesis is a premier coaching institute dedicated to nurturing academic excellence. We focus on providing comprehensive education with personalized attention to every student.
+            </p>
+            <p className="text-lg text-blue-100 mb-8 leading-relaxed">
+              Our expert faculty, comprehensive curriculum, and personalized approach ensure that every student reaches their full potential and achieves their academic goals.
+            </p>
+            <div className="flex flex-wrap justify-center gap-8">
+              <div className="flex items-start gap-3">
+                <Award className="text-amber-400 flex-shrink-0 mt-1" size={22} />
+                <div className="text-left">
+                  <h4 className="font-bold text-lg mb-1">Expert Faculty</h4>
+                  <p className="text-blue-100 text-sm">Highly qualified teachers with years of experience</p>
                 </div>
-                <div className="flex items-start gap-4">
-                  <BookOpen className="text-amber-400 flex-shrink-0 mt-1" size={24} />
-                  <div>
-                    <h4 className="font-bold text-lg mb-1">Comprehensive Curriculum</h4>
-                    <p className="text-blue-100">Complete coverage of all subjects and topics</p>
-                  </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <BookOpen className="text-amber-400 flex-shrink-0 mt-1" size={22} />
+                <div className="text-left">
+                  <h4 className="font-bold text-lg mb-1">Comprehensive Curriculum</h4>
+                  <p className="text-blue-100 text-sm">Complete coverage of all subjects and topics</p>
                 </div>
-                <div className="flex items-start gap-4">
-                  <Users className="text-amber-400 flex-shrink-0 mt-1" size={24} />
-                  <div>
-                    <h4 className="font-bold text-lg mb-1">Personalized Attention</h4>
-                    <p className="text-blue-100">Small batch sizes for individual focus</p>
-                  </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Users className="text-amber-400 flex-shrink-0 mt-1" size={22} />
+                <div className="text-left">
+                  <h4 className="font-bold text-lg mb-1">Personalized Attention</h4>
+                  <p className="text-blue-100 text-sm">Small batch sizes for individual focus</p>
                 </div>
               </div>
             </div>
+          </div>
 
+          {/* Founders Cards */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Ravi Sir */}
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-orange-500 rounded-3xl opacity-30 blur-2xl" />
-              <div className="relative bg-white rounded-3xl p-8 border-2 border-amber-400 shadow-2xl flex flex-col items-center text-slate-800 transition-all duration-300 hover:shadow-amber-400/20 hover:scale-[1.02]">
+              <div className="relative bg-white rounded-3xl p-8 border-2 border-amber-400 shadow-2xl flex flex-col items-center text-slate-800 transition-all duration-300 hover:scale-[1.02]">
                 <img
                   src="/ravi-sir.jpeg"
                   alt="Ravi Sir"
-                  className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-amber-400 shadow-lg"
+                  className="w-40 h-40 rounded-full object-cover mb-5 border-4 border-amber-400 shadow-lg"
                 />
-                <h3 className="text-4xl font-extrabold mb-2 text-center text-blue-900 drop-shadow-lg">Ravi Sir</h3>
-                <p className="text-amber-600 text-2xl font-bold mb-4 text-center">Head of Institute</p>
-                <p className="text-blue-900 text-center leading-relaxed font-semibold text-lg bg-amber-100 rounded-xl px-4 py-3 border-2 border-amber-400 shadow-md">
-                  With extensive experience in education and a passion for student success, <span className="text-amber-500 font-bold">Ravi Sir</span> leads Prepgenesis with vision and dedication. His commitment to excellence has transformed the lives of many students.
+                <h3 className="text-2xl font-extrabold mb-1 text-center text-blue-900">Ravi Sir</h3>
+                <p className="text-amber-600 text-base font-bold mb-3 text-center">Head of Institute</p>
+                <p className="text-slate-600 text-center leading-relaxed font-medium text-sm">
+                  With extensive experience in education and a passion for student success, Ravi Sir leads Prepgenesis with vision and dedication. His commitment to excellence has transformed the lives of many students.
+                </p>
+              </div>
+            </div>
+
+            {/* Co-Founder */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-3xl opacity-30 blur-2xl" />
+              <div className="relative bg-white rounded-3xl p-8 border-2 border-blue-400 shadow-2xl flex flex-col items-center text-slate-800 transition-all duration-300 hover:scale-[1.02]">
+                <img
+                  src="/cofounder.jpeg"
+                  alt="Co-Founder"
+                  className="w-40 h-40 rounded-full object-cover mb-5 border-4 border-blue-400 shadow-lg"
+                />
+                <h3 className="text-2xl font-extrabold mb-1 text-center text-blue-900">Co-Founder</h3>
+                <p className="text-blue-600 text-base font-bold mb-3 text-center">Co-Founder of Institute</p>
+                <p className="text-slate-600 text-center leading-relaxed font-medium text-sm">
+                  A premium teacher of Mathematics with an exceptional ability to simplify complex concepts. His innovative teaching methods and deep subject expertise inspire students to excel beyond expectations.
                 </p>
               </div>
             </div>
