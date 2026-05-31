@@ -536,7 +536,7 @@ export default function Home() {
                   className="w-40 h-40 rounded-full object-cover mb-5 border-4 border-amber-400 shadow-lg"
                 />
                 <h3 className="text-2xl font-extrabold mb-1 text-center text-blue-900">Ravi Sir</h3>
-                <p className="text-amber-600 text-base font-bold mb-3 text-center">Head of Institute</p>
+                <p className="text-amber-600 text-base font-bold mb-3 text-center">Founder</p>
                 <p className="text-slate-600 text-center leading-relaxed font-medium text-sm">
                   With extensive experience in education and a passion for student success, Ravi Sir leads Prepgenesis with vision and dedication. His commitment to excellence has transformed the lives of many students.
                 </p>
@@ -553,7 +553,7 @@ export default function Home() {
                   className="w-40 h-40 rounded-full object-cover mb-5 border-4 border-blue-400 shadow-lg"
                 />
                 <h3 className="text-2xl font-extrabold mb-1 text-center text-blue-900">Harshvardhan Sir</h3>
-                <p className="text-blue-600 text-base font-bold mb-3 text-center">Co-Founder of Institute</p>
+                <p className="text-blue-600 text-base font-bold mb-3 text-center">Co-Founder</p>
                 <p className="text-slate-600 text-center leading-relaxed font-medium text-sm">
                   A premium teacher of Mathematics with an exceptional ability to simplify complex concepts. His innovative teaching methods and deep subject expertise inspire students to excel beyond expectations.
                 </p>
