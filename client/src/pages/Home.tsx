@@ -525,37 +525,30 @@ export default function Home() {
           </div>
 
           {/* Founders Cards */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="max-w-2xl mx-auto flex justify-center">
             {/* Ravi Sir */}
-            <div className="relative">
+            <div className="relative w-full max-w-lg">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-400 to-orange-500 rounded-3xl opacity-30 blur-2xl" />
               <div className="relative bg-white rounded-3xl p-8 border-2 border-amber-400 shadow-2xl flex flex-col items-center text-slate-800 transition-all duration-300 hover:scale-[1.02]">
-                <img
-                  src="/ravi-sir.jpeg"
-                  alt="Ravi Sir"
-                  className="w-40 h-40 rounded-full object-cover mb-5 border-4 border-amber-400 shadow-lg"
-                />
+                <div className="relative w-40 h-40 mb-5 select-none">
+                  <img
+                    src="/ravi-sir.jpeg"
+                    alt="Ravi Sir"
+                    className="w-full h-full rounded-full object-cover border-4 border-amber-400 shadow-lg pointer-events-none"
+                    onContextMenu={(e) => e.preventDefault()}
+                    draggable={false}
+                  />
+                  {/* Transparent overlay to protect image */}
+                  <div
+                    className="absolute inset-0 rounded-full bg-transparent cursor-default"
+                    onContextMenu={(e) => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
+                  />
+                </div>
                 <h3 className="text-2xl font-extrabold mb-1 text-center text-blue-900">Ravi Sir</h3>
                 <p className="text-amber-600 text-base font-bold mb-3 text-center">Founder</p>
                 <p className="text-slate-600 text-center leading-relaxed font-medium text-sm">
                   With extensive experience in education and a passion for student success, Ravi Sir leads Prepgenesis with vision and dedication. His commitment to excellence has transformed the lives of many students.
-                </p>
-              </div>
-            </div>
-
-            {/* Co-Founder */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-3xl opacity-30 blur-2xl" />
-              <div className="relative bg-white rounded-3xl p-8 border-2 border-blue-400 shadow-2xl flex flex-col items-center text-slate-800 transition-all duration-300 hover:scale-[1.02]">
-                <img
-                  src="/cofounder.jpeg"
-                  alt="Co-Founder"
-                  className="w-40 h-40 rounded-full object-cover mb-5 border-4 border-blue-400 shadow-lg"
-                />
-                <h3 className="text-2xl font-extrabold mb-1 text-center text-blue-900">Harshvardhan Sir</h3>
-                <p className="text-blue-600 text-base font-bold mb-3 text-center">Co-Founder</p>
-                <p className="text-slate-600 text-center leading-relaxed font-medium text-sm">
-                  A premium teacher of Mathematics with an exceptional ability to simplify complex concepts. His innovative teaching methods and deep subject expertise inspire students to excel beyond expectations.
                 </p>
               </div>
             </div>
