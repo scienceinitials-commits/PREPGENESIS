@@ -534,16 +534,20 @@ export default function Home() {
                   <img
                     src="/ravi-sir.jpeg"
                     alt="Ravi Sir"
-                    className="w-full h-full rounded-full object-cover border-4 border-amber-400 shadow-lg pointer-events-none"
+                    className="w-full h-full rounded-full object-cover object-top border-4 border-amber-400 shadow-lg pointer-events-none"
                     onContextMenu={(e) => e.preventDefault()}
                     draggable={false}
                   />
-                  {/* Transparent overlay to protect image */}
+                  {/* Transparent overlay to protect image & show watermark */}
                   <div
-                    className="absolute inset-0 rounded-full bg-transparent cursor-default"
+                    className="absolute inset-0 rounded-full bg-black/5 flex items-center justify-center cursor-default select-none"
                     onContextMenu={(e) => e.preventDefault()}
                     onClick={(e) => e.preventDefault()}
-                  />
+                  >
+                    <span className="text-white/50 text-xs font-extrabold tracking-widest uppercase transform -rotate-12 bg-blue-900/30 px-2 py-1 rounded border border-white/20 shadow-sm backdrop-blur-[0.5px]">
+                      Prepgenesis
+                    </span>
+                  </div>
                 </div>
                 <h3 className="text-2xl font-extrabold mb-1 text-center text-blue-900">Ravi Sir</h3>
                 <p className="text-amber-600 text-base font-bold mb-3 text-center">Founder</p>
